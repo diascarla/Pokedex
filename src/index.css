@@ -1,9 +1,5 @@
 div{
     display: flex;
-    justify-content: baseline;
-    justify-items: end;
-    justify-self: auto;
-    align-items: baseline;
-    
-    
+    color: white;
+  
 }

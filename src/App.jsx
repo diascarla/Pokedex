@@ -1,34 +1,20 @@
-import { createGlobalStyle } from "styled-components";
+import { GlobalStyle } from "./style/global";
 import Home from "./pages/home";
+
 // import { CreateRoutes } from "./pages/routers"; 
-
-// import { ThemeTogglerButton } from "../../src/components/Theme-toggler-button"
-// import { ThemeProvider } from "../../src/contexts/theme";
-
-
 
 function App() {
 
+
   return (
-    <>
-    <GlobalStyle /> 
-    <Home />
-    {/* <CreateRoutes /> */}
+    <div>
+      <GlobalStyle />
+      <Home />
 
-    {/* <ThemeProvider />
-        <ThemeTogglerButton />
-      <ThemeProvider /> */}
+      {/* <CreateRoutes /> */}
 
-    </>
+    </div>
   );
 }
 
-const GlobalStyle = createGlobalStyle`
-  *{
-    marin: 0;
-    padding: 0;
-  }
-`
-
 export default App;
-

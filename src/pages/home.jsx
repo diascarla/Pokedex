@@ -1,21 +1,22 @@
 import React from "react"
-import Header from "../components/header/Header"
-import Pokemons from "../services/Pokemons"
+import { Header } from "../components/header/Header"
+import Pokemons from "../components/Cards/pokemonCard/pokemons"
+import { ThemeProvider } from "../contexts/themeContext"
 
 //import LoadingButton from "../components/Button/ButtonLoading"
-// import ButtonTheme from "../components/Button/ButtonTheme"
 
 function Home() {
 
-    return (  
-      <>
+  return (
+    <div>
+      <ThemeProvider>
         <Header />
-        <Pokemons/>
-        
-        {/* <LoadingButton/>       */}
-      </>
-        
-    )
+        <Pokemons />
+
+      </ThemeProvider>
+    </div>
+
+  )
 }
 
 export default Home

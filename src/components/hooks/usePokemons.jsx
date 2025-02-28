@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+//import { useParams } from "react-router-dom";
 
 const URL = `https://pokeapi.co/api/v2/pokemon?limit=10&offset=0`
 const url_endPoint = `https://pokeapi.co/api/v2/pokemon/`
@@ -8,9 +9,10 @@ function usePokemons() {
     const [pokemons, setPokemons] = useState([]);
     const [EndPoint, setEndPoint] = useState(''); // siguienteUrl
     const [ scroll, setScroll ] = useState(true)  // verMas - scroll infinito
+    //const { id } = useParams();
 
-    const fetchPokemon = async (url) => {
-            const response = await fetch(url)
+    const fetchPokemon = async (url_endPoint) => {
+            const response = await fetch(url_endPoint)
             const poke = await response.json()
 
             const abilities = poke.abilities.map((ability) => (
