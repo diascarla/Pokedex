@@ -8,11 +8,11 @@ import { ThemeProvider } from "../contexts/themeContext"
 function Home() {
 
   return (
+
     <div>
       <ThemeProvider>
         <Header />
         <Pokemons />
-
       </ThemeProvider>
     </div>
 

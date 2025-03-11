@@ -1,4 +1,4 @@
-import { Section, CardsPokemons, ImgPokemons, DivInfo } from './stylePokemons';
+import { Section, CardsPokemons, ImgPokemons, DivInfo, Type } from './stylePokemons';
 import usePokemons from '../../hooks/usePokemons';
 import InfiniteScroll from "react-infinite-scroll-component"
 import LoadingPage from "../../loadingMorePokemons/loading";
@@ -7,10 +7,9 @@ import { SearchPokemons } from '../../input-search/searchPokemons';
 import { useContext, useState } from 'react';
 import { ThemeContext } from '../../../contexts/themeContext';
 
-//import pokemonError from "../../src/assets/error404.png"
 //import { Link } from "react-router-dom"
 
-function Card({ name, img, type, verPokemon }) {
+function Card({ name, img, id, type, verPokemon }) {
     const { modeTheme } = useContext(ThemeContext)
 
     return (
@@ -23,8 +22,8 @@ function Card({ name, img, type, verPokemon }) {
                 <ImgPokemons src={img} alt={name} />
 
                 <DivInfo>
-                    <p>{name}</p>
-                    <p>{type}</p>
+                    <p>{id} . {name}</p>
+                    <Type>{type}</Type>
                 </DivInfo>
 
             </CardsPokemons>

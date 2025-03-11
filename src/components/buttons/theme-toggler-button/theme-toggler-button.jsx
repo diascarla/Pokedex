@@ -11,9 +11,8 @@ export const ButtonToggleTheme = () => {
   return (
     <div>   
       <Button onClick={() => setModeTheme(modeTheme === themes.light ? themes.dark : themes.light)}>
-        <Img src={modeTheme === themes.light ? sunIcon : moonIcon } alt="theme icon" />
+        <Img src={modeTheme === themes.light ? moonIcon : sunIcon } alt="theme icon" />
       </Button>
     </div>
   )
 } 
-

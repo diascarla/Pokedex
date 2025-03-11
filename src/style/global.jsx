@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body{
     font-size: 14px;
-    font-family: sans-serif;
+    font-family: 'Shantell sans', cursive;
   }
 
   ul, li {

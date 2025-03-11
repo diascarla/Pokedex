@@ -1,5 +1,7 @@
 div{
-    display: flex;
-    color: white;
+  display: flex;
+  color: #ffffff;
+  overflow: inherit;
+  font-weight: 600;
   
 }

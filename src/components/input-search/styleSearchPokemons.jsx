@@ -9,29 +9,38 @@ export const Form = styled.form`
 `
 
 export const InputSearch = styled.input`
-    background-color: var(--card);
-    border: 1px solid #ddd;
+    border: none;
     border-radius: 12px;
-    padding: 14px;
-    flex: .4;
-    font-size: 16px;
+    padding-inline: 1.5rem;
+    font-size: 1.25rem;
+    height: 45px;
     box-shadoow: 4px 4px 8px #00000020;
+    transition: 1s;
+    width: 0%;
+
+    &:hover{
+        background-color: var(--card);
+        border: 1px solid #ddd;
+        width: 30%;
+    }
 `
 
 export const ButtonSearch = styled.button`
     width: 50px;
     height: 50px;
-    border: 1px solid #ddd;
+    border: none;
+    font-weight: 600;
     border-radius: 12px;
-    box-shadoow: 4px 4px 8px #00000020;
+    background: transparent;
     transition: 0.4s;
     cursor: pointer;
     margin: 30px;
-    font-size: 15px;
+    font-size: 35px;
 
     &:hover {
         transform: scale(1.1);
         opacity: 0.9;
     }
 `
+
 

@@ -11,10 +11,10 @@ export function SearchPokemons({ search, setSearch, pokemonType }) {
         <Form onSubmit={pokemonType}
             style={{background: modeTheme.background, hover: modeTheme.hover }}>
 
-            <InputSearch type="text" placeholder="Tipos" value={search} onChange={(e) => setSearch(e.target.value)} style={{ color: modeTheme.color, background: modeTheme.backgroundCard, hover: modeTheme.hover }}/>
+            <InputSearch type="text" placeholder="Buscar Pokemons" value={search} onChange={(e) => setSearch(e.target.value)} style={{ color: modeTheme.color, background: modeTheme.background, hover: modeTheme.hover }}/>
 
             <ButtonSearch type="submit" 
-            style={{ color: modeTheme.color, background: modeTheme.backgroundCard, hover: modeTheme.hover }}> <IoIosSearch /> </ButtonSearch>
+            style={{ color: modeTheme.color, hover: modeTheme.hover }}> <IoIosSearch/> </ButtonSearch>
         </Form >
     )
 }

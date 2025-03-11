@@ -17,7 +17,7 @@ export const themes = {
 export const ThemeContext = createContext({})
 
 function saveTheme(){
-    const theme = localStorage.getItem('moodeTheme')
+    const theme = localStorage.getItem('modeTheme')
     return theme ? JSON.parse(theme) : { mode : themes.light }
 }
 
@@ -34,4 +34,3 @@ export const ThemeProvider = (props) => {
         </ThemeContext.Provider>
     )
 }
-
