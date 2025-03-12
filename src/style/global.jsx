@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
   :root{
@@ -16,16 +16,13 @@ export const GlobalStyle = createGlobalStyle`
   body{
     font-size: 14px;
     font-family: 'Shantell sans', cursive;
-  }
-
-  ul, li {
-    list-style: none;
-  }
-    
-  body {
     background-color: var(--back);
     color: var(--text);
     transition: background-color 0.3s, 
     color 0.3s;
+  }
+
+  ul, li {
+    list-style: none;
   }
 `
