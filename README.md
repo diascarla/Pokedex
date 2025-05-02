@@ -1,8 +1,3 @@
-
-## Objetivo
-
-
-
 <div align="center">
 
 # Pokédex
