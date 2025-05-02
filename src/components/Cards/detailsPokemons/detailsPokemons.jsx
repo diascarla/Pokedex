@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { ThemeContext } from "../../../contexts/themeContext"
-import { DivContainer, DivContainerDetails, Section, DivImg, ImgPokemons, DivInfo, } from "./styleDetailsPokemons"
+import { DivContainer, DivContainerDetails, Section, DivImg, ImgPokemons, DivInfo } from "./styleDetailsPokemons"
 
 export function DetailsPokemons({ pokemon, mostrar, parar }) {
   const { modeTheme } = useContext(ThemeContext);

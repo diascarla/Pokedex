@@ -1,4 +1,4 @@
-import React from "react"
+// import React from "react"
 import { Header } from "../components/header/Header"
 import Pokemons from "../components/Cards/pokemonCard/pokemons"
 import { ThemeProvider } from "../contexts/themeContext"
