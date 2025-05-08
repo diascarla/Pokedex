@@ -83,7 +83,7 @@ Seria avaliado:
 
 2. **Acesse o diretório do projeto:**
    ```bash
-   cd quest-teste-tecnico-pokedex
+   cd nome-do-projeto
    ```
 
 3. **Instale as dependências:**
